@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
 
-    public float speed = 3f;
+    public float speed = 1f;
     public int a = 1;
     private Rigidbody rb;
 
@@ -15,7 +15,7 @@ public class PlayerControl : MonoBehaviour {
 
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
             speed = 6f;
 
         if (Input.GetKeyDown(KeyCode.Q))

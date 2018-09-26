@@ -295,19 +295,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1593090786}
   m_Mesh: {fileID: 0}
---- !u!114 &1593090791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1593090786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f47f4ccd99086745b1618e4d2f8a959, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 6.5
-  range: 10
 --- !u!1 &1622947453
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  a: 1
 --- !u!23 &1813982045
 MeshRenderer:
   m_ObjectHideFlags: 0
