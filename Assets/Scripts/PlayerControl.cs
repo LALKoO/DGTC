@@ -26,8 +26,8 @@ public class PlayerControl : MonoBehaviour {
 
         if (a == 0)
         {
-            float moveY = Input.GetAxis("Vertical");
-           rb.MovePosition(rb.position + Vector3.right * moveY * speed * Time.deltaTime);
+            float moveY = Input.GetAxis("Horizontal");
+           rb.MovePosition(rb.position + Vector3.forward * moveY * speed * Time.deltaTime);
         }
         else
         {
@@ -35,9 +35,9 @@ public class PlayerControl : MonoBehaviour {
             rb.MovePosition(rb.position + Vector3.right * moveX * speed * Time.deltaTime);
         }
 
-
-        //rb.transform.Rotate(0, 90, 0);
-        //else if (Input.GetKeyDown(KeyCode.E))
+            //if (Input.GetKeyDown(KeyCode.E))
+            //rb.transform.Rotate(0, 90, 0);
+            //else if (Input.GetKeyDown(KeyCode.E))
             //rb.transform.Rotate(0, -90, 0);
 
             if (Input.GetKeyDown(KeyCode.Space))
