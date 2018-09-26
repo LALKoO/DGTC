@@ -15,7 +15,7 @@ public class PlayerControl : MonoBehaviour {
 
 	void Update () {
 
-        speed = 1f;
+        speed = 2f;
         if (Input.GetKey(KeyCode.LeftShift))
             speed = 6f;
 

@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 1813982045}
   - component: {fileID: 1813982049}
   - component: {fileID: 1813982044}
-  - component: {fileID: 1813982050}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -505,18 +504,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
---- !u!65 &1813982050
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1813982043}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1827794116 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 6085f9d5e9ad10f4ab3af1649d29cf76, type: 3}
