@@ -21,13 +21,13 @@ public class CamMove : MonoBehaviour {
         }
 
         if( a == 1 || a == 5)
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10f);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z-5f);
         else if (a == 2)
-            transform.position = new Vector3(10f, player.transform.position.y, player.transform.position.z);
+            transform.position = new Vector3(player.transform.position.x+5f, player.transform.position.y, player.transform.position.z);
         else if (a == 3)
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, 10f);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z+5f);
         else if (a == 4 || a == 0)
-            transform.position = new Vector3(-10f, player.transform.position.y, player.transform.position.z);
+            transform.position = new Vector3(player.transform.position.x-5f, player.transform.position.y, player.transform.position.z);
 
         if (a == 0)
             a = 4;
