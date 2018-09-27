@@ -19,6 +19,9 @@ public class PlayerControl : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftShift))
             speed = 6f;
 
+        if (Input.GetKeyDown(KeyCode.Space))
+            rb.AddForce(Vector3.up * 200);
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             a--;
@@ -55,9 +58,6 @@ public class PlayerControl : MonoBehaviour {
             a = 4;
         else if (a == 5)
             a = 1;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-                rb.AddForce(Vector3.up * 200); 
           
 	}
 }
